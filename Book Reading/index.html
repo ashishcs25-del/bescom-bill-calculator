@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiet Pages — Reading Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <div class="brand">
+
+                <span class="brand-icon">☕</span>
+
+                <span>Quiet Pages</span>
+
+            </div>
+
+            <span class="nav-text">
+                A little record of what you read.
+            </span>
+
+        </div>
+
+    </nav>
+
+
+
+    <main class="container">
+
+
+        <!-- Introduction -->
+
+        <section class="hero">
+
+            <p class="eyebrow">
+                YOUR READING JOURNAL
+            </p>
+
+            <h1>
+                Read slowly.<br>
+                <span>Remember more.</span>
+            </h1>
+
+            <p class="hero-text">
+                Keep track of the pages you've read and see how
+                your reading grows over days, weeks and months.
+            </p>
+
+        </section>
+
+
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <p>This week</p>
+
+                <strong>
+                    <span id="weekPages">0</span>
+                </strong>
+
+                <span class="stat-unit">
+                    pages
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <p>This month</p>
+
+                <strong>
+                    <span id="monthPages">0</span>
+                </strong>
+
+                <span class="stat-unit">
+                    pages
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <p>All time</p>
+
+                <strong>
+                    <span id="totalPages">0</span>
+                </strong>
+
+                <span class="stat-unit">
+                    pages
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <p>Sessions</p>
+
+                <strong>
+                    <span id="totalSessions">0</span>
+                </strong>
+
+                <span class="stat-unit">
+                    reading sessions
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Main layout -->
+
+        <section class="main-grid">
+
+
+            <!-- Add reading -->
+
+            <div class="card add-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            ADD READING
+                        </p>
+
+                        <h2>
+                            What did you read?
+                        </h2>
+
+                    </div>
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                </div>
+
+
+
+                <div class="form">
+
+
+                    <div class="field">
+
+                        <label for="bookName">
+                            Book
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bookName"
+                            placeholder="e.g. The Remains of the Day"
+                        >
+
+                    </div>
+
+
+
+                    <div class="two-fields">
+
+
+                        <div class="field">
+
+                            <label for="pages">
+                                Pages read
+                            </label>
+
+                            <input
+                                type="number"
+                                id="pages"
+                                placeholder="25"
+                                min="1"
+                            >
+
+                        </div>
+
+
+
+                        <div class="field">
+
+                            <label for="readingDate">
+                                Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="readingDate"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <button
+                        id="addBtn"
+                        class="primary-button"
+                    >
+
+                        Add reading
+
+                        <span>+</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Reading goal -->
+
+            <div class="card goal-card">
+
+                <p class="section-label">
+                    YOUR PROGRESS
+                </p>
+
+                <h2>
+                    Keep going.
+                </h2>
+
+                <p class="goal-text">
+                    Every page counts. There is no need to
+                    rush through a book.
+                </p>
+
+
+                <div class="quote">
+
+                    <span>“</span>
+
+                    <p>
+                        A reader lives a thousand lives
+                        before he dies.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Reading history -->
+
+        <section class="history-section">
+
+
+            <div class="history-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        READING HISTORY
+                    </p>
+
+                    <h2>
+                        Your recent sessions
+                    </h2>
+
+                </div>
+
+                <span id="sessionCount">
+                    0 sessions
+                </span>
+
+            </div>
+
+
+
+            <div
+                id="readingList"
+                class="reading-list"
+            >
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        📖
+                    </div>
+
+                    <h3>
+                        No reading yet
+                    </h3>
+
+                    <p>
+                        Add your first reading session above.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <div class="footer-line"></div>
+
+            <div class="footer-content">
+
+                <span>
+                    Quiet Pages
+                </span>
+
+                <span>
+                    Read at your own pace.
+                </span>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
